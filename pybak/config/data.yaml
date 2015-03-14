@@ -1,0 +1,3 @@
+target : C:/Backups/{0}_{1}
+jobs: [[Job1, 'C:/Important Files'], [Job2, 'C:/Files']]
+
