@@ -2,11 +2,11 @@
 # Name:        pybak.py
 # Purpose:     Create a backup of files contained in one or more directories.
 #
-# Author:      Jeremy
+# Author:      Jeremy Morris
 #
 # Created:     14/03/2015
 # Copyright:   (c) Jeremy 2015
-# License:     <your licence>
+# License:     MIT
 #-------------------------------------------------------------------------------
 
 import datetime
@@ -16,6 +16,7 @@ import errno
 import yaml
 
 def parse_config():
+    #This path will need to be edited depening on how you run this script.
     with open('config\data.yaml') as f:
         return  yaml.load(f)
     

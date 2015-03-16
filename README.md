@@ -21,7 +21,8 @@ jobs: [[Job1, 'C:/Important Files'], [Job2, 'C:/Files']]
 - **jobs** is a List of lists containing as many backup jobs as you need. Name them whatever you wish, something less ambiguous than *Job1* and *Job2*?
 
 ## Issues ##
-This script has a couple of issues I should mention, it has a no tests, it has the structure of a python module but it isn't configured, so **PyYaml** but be downloaded before you use it.
+This script has a couple of issues I should mention, it has a no tests, it has the structure of a python module but it isn't configured, so **PyYaml** but be downloaded before you use it and there is a relative path in the **parse_config** function that will need to be changed if you run the script with a batch file from the task scheduler.
+I'm not sure about how to workaround this issue just yet.
 
 ```
 pip install pyyaml
